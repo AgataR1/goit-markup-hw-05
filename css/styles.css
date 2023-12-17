@@ -553,37 +553,38 @@ ol {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 /*photo transition*/
+
 .photo-img {
   position: relative;
   overflow: hidden;
 }
-.photo-img::after {
-  content: "";
-  position: absolute;
-  background-color: var(--iris);
-  width: 100%;
-  height: 100%;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.photo-img:hover::after {
-  transform: translateY(-100%);
-}
-.photo-img:focus::after {
-  transform: translateY(-100%);
-}
 
 .photo-img-txt {
   position: absolute;
-  top: 340px;
-  right: 32px;
-  left: 32px;
+  top: 0px;
+  padding: 40px 32px;
+  height: 100%;
+  width: 100%;
   font-family: Roboto;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
   color: var(--cloud);
-  z-index: 3;
+  background-color: var(--iris);
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.photo {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.photo:hover.photo-img-txt,
+.photo:focus.photo-img-txt {
+  transform: translateY(0%);
 }
 
 /*modal*/
