@@ -672,20 +672,13 @@ ol {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-active:hover {
-  color: var(--green);
-}
-.link-active:hover::after {
-  background-color: var(--green);
-}
+
 .mail {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mail:hover {
-  color: var(--green);
-}
+
 /*portfolio-button*/
 .portfolio-button {
   transition-property: color, background-color, border-color, box-shadow;
