@@ -354,6 +354,9 @@ ol {
 }
 .first-section-button {
   min-width: 169px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .second-section {
   padding: 120px 0;
@@ -629,7 +632,7 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: fill, background-color;
+  transition-property: background-color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -638,6 +641,11 @@ ol {
   border: none;
   background-color: var(--ocean);
   fill: #ffffff;
+}
+.icon-close-black {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*active link*/
@@ -676,4 +684,21 @@ ol {
 }
 .mail:hover {
   color: var(--green);
+}
+/*portfolio-button*/
+.portfolio-button {
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-media-link {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-list-link {
+  transition-property: border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
