@@ -628,17 +628,44 @@ ol {
 .link-active {
   position: relative;
   overflow: hidden;
+  color: var(--ocean);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-active::after {
   content: "";
   position: absolute;
   background-color: var(--ocean);
   width: 100%;
+  border-radius: 2px;
   height: 4px;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.link-active:hover {
+  color: var(--green);
+}
 .link-active:hover::after {
+  background-color: var(--green);
+}
+@keyframes color-change {
+  0% {
+    color: var(--ocean);
+  }
+  100% {
+    color: var(--green);
+  }
+}
+.mail:hover {
+  animation-name: color-change;
+  animation-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: normal;
 }
