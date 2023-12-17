@@ -569,6 +569,20 @@ ol {
 .photo-img:focus::after {
   transform: translateY(-100%);
 }
+
+.photo-img-txt {
+  position: absolute;
+  top: 340px;
+  right: 32px;
+  left: 32px;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--cloud);
+  z-index: 3;
+}
+
 /*modal*/
 .backdrop {
   position: fixed;
