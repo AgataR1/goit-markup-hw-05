@@ -661,7 +661,7 @@ ol {
   width: 100%;
   border-radius: 2px;
   height: 4px;
-  bottom: 1px;
+  bottom: -1px;
   left: 0;
   transition-property: background-color;
   transition-duration: 250ms;
