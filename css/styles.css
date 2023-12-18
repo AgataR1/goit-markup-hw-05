@@ -558,7 +558,6 @@ ol {
   position: relative;
   overflow: hidden;
 }
-
 .photo-img-txt {
   position: absolute;
   top: 0px;
@@ -572,18 +571,17 @@ ol {
   color: var(--cloud);
   background-color: var(--iris);
   transform: translateY(100%);
-  transition-property: transform;
+  transition: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .photo {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.photo:hover.photo-img-txt,
-.photo:focus.photo-img-txt {
+.photo:hover .photo-img-txt,
+.photo:focus .photo-img-txt {
   transform: translateY(0%);
 }
 
