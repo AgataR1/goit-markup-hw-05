@@ -299,6 +299,7 @@ ol {
   border: 1px solid var(--cornflower);
   height: 300px;
   width: 360px;
+  width: calc((100% - 48px) / 3);
 }
 .team-list {
   display: flex;
@@ -322,7 +323,6 @@ ol {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   background-color: var(--white);
   flex-basis: calc((100% - 3 * 24px) / 4);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .footer-container > .logo {
@@ -359,9 +359,6 @@ ol {
 }
 .third-section {
   padding-bottom: 120px;
-}
-.images-list-item {
-  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-main-section {
@@ -418,7 +415,6 @@ ol {
   justify-content: center;
 }
 .client-list-item {
-  width: 168px;
   height: 88px;
   width: calc((100% - 120px) / 6);
 }
